@@ -1,0 +1,39 @@
+name: Build Resume
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "resume/**"
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: src
+          root_file: main.tex
+
+      - name: Azure Login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Upload resume
+        uses: azure/CLI@v2
+        with:
+          inlineScript: |
+            az storage blob upload \
+              --account-name gerritjan \
+              --container-name '$web' \
+              --name cv-gerritjan-van-der-sloot.pdf \
+              --file resume/resume.pdf \
+              --overwrite true
