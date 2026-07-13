@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Gerritjan van der Sloot}}}} % First name
+	
+	\vspace{6pt}
+	
+	{\Large Software Engineer} % Career or current job title
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth} % 20% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% \icon{Globe}{11}{\href{http://www.google.com}{portafolio.com}}\\ 
+    \icon{Phone}{11}{+31 6 3119 0347}\\
+    \icon{MapMarker}{11}{Assen, Drenthe}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth} % 27% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\icon{Envelope}{11}{\href{mailto:gjvandersloot@gmail.com}{gjvandersloot@gmail.com}}\\	
+    % \icon{Github}{11}{\href{https://github.com/uma-dev}{github.com/uma-dev}}\\
+    \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/gerritjan-van-der-sloot/}{/in/gerritjan-van-der-sloot}}\\    
+    \icon{Github}{11}{\href{https://github.com/Gjvdsloot}{gjvdsloot}}\\ 
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+    \cvsect{Over mij}
+	% \vspace{-6pt}
+    Ik ben een softwareontwikkelaar met ruim twee jaar ervaring in het ontwikkelen van back-endoplossingen in .NET en Azure. Ik werk graag aan robuuste API's, automatisering en cloudoplossingen. Door mijn achtergrond in Kunstmatige Intelligentie combineer ik een analytische blik met een pragmatische aanpak om complexe technische vraagstukken op te lossen. \\
+    %Dummy text
+	% \lipsum[1][1-5] \\
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Vaardigheden}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.375\textwidth}
+        \textbf{Programmeertalen:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+    C\#, Razor, SQL, JavaScript, Java, \\ Python, R, C.
+    \end{minipage}
+    \vspace{4mm}
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technieken:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      .NET, ASP.NET Core, Azure, Azure DevOps, Entity Framework Core, Bicep, REST API's, Git.
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+% \cvsect{Projects}
+% \begin{entrylist}
+%     \entry
+% 		{Technology}
+% 		{My project 1}
+% 		{github.com link}
+% 		{%Dummy text 
+%         \lipsum[1][1-3]}
+%     \entry
+% 		{Technology}
+% 		{My project 2}
+% 		{github.com link}
+% 		{%Dummy text 
+%         \lipsum[1][1-3]}
+% 	\entry
+% 		{Technology}
+% 		{My project 3}
+% 		{github.com link}
+% 		{%Dummy text 
+%         \lipsum[1][1-3]}
+%     \entry
+% 		{Technology}
+% 		{My project 4}
+% 		{github.com link}
+% 		{%Dummy text 
+%         \lipsum[1][1-3]}
+% \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Opleiding}
+\begin{entrylist}
+    \entry
+		{September 2023}
+		{BSc. Kunstmatige Intelligentie}
+		{Rijksuniversiteit Groningen}
+		{Diploma behaald}
+      \entry
+        {Juni 2015}
+		{VWO}
+		{Zernike College}
+		{Natuur en Techniek \& Natuur en Gezondheid \\ Diploma behaald}
+    \entry
+        {Juni 2013}
+		{HAVO}
+		{Zernike College}
+		{Natuur en Techniek \\ Diploma behaald}
+      \entry
+        {Juni 2011}
+		{VMBO-T}
+		{Zernike College}
+		{Diploma behaald}
+ %    \entry
+	% 	{x/2023 - x/2023}
+	% 	{Professional Certificate}
+	% 	{School}
+	% 	{\lipsum[1][1]}
+	% \entry
+	% 	{x/2023 - x/2023}
+	% 	{Certificate}
+	% 	{School}
+	% 	{\lipsum[1][2]}
+	% \entry
+	% 	{x/2023 - x/2023}
+	% 	{Engineer}
+	% 	{School}
+	% 	{\lipsum[1][2]}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Ervaring}
+\begin{entrylist}
+    \entry
+        {Juni 2025 \\ -- Heden}
+		{Software ontwikkelaar}
+		{Dairy Data Warehouse}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item In juni 2024 overgestapt van detachering naar directe dienst.
+            \item Ontwikkelen en onderhouden van back-endoplossingen in .NET binnen het Pipeline-team.
+            \item Automatiseren van datastromen voor een betrouwbare en centrale beschikbaarheid van klantdata.
+            \item Implementeren en beheren van Azure DevOps CI/CD-pipelines en cloudinfrastructuur.
+            \item Ontwikkelen en optimaliseren van Azure-oplossingen, databases en API's.
+        \end{itemize}}
+    \entry
+        {Januari 2025 \\ -- Juni 2025}
+		{Software ontwikkelaar gedetacheerd bij Dairy Data Warehouse}
+		{Vitas}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Gedetacheerd als softwareontwikkelaar binnen het Pipeline-team van Dairy Data Warehouse. Na een succesvolle detacheringsperiode in vaste dienst getreden.
+        \end{itemize}}
+	\entry
+        {November 2023 \\ -- December 2024}
+		{Software ontwikkelaar gedetacheerd bij Eneve}
+		{Vitas}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Ontwikkelen van full-stackoplossingen binnen een Software as a Service (SaaS)-platform voor energieleveranciers.
+            \item Werken met \texttt{C\#}, \texttt{Razor MVC}, SQL Server, Entity Framework en REST/SOAP API's.
+            \item Derdelijnsondersteuning bij complexe technische vraagstukken.
+        \end{itemize}}
+	\entry
+		{September 2017 \\ -- Februari 2019}
+		{Onderwijsassistent}
+		{Rijksuniversiteit Groningen}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Statistiek: Bij dit vak leerde ik studenten statistische analyses (bv. T-tests, regressie, en ANOVA) uit te voeren in de taal \texttt{R}.
+            \item Basic scientific skills: Vak waarin studenten leren wetenschappelijke verslagen te schrijven in \texttt{LaTeX}. Verder werden ze getraind in het geven van presentaties en peer-to-peer reviewen van academische papers.
+            \item Introduction to AI: Introductie vak over kunstmatige intelligentie gecombineerd met mentoraat.
+            \item Autonomous systems: Op het lab leerden studenten over concepten in de robotica en computationele intelligentie, zoals genetische algoritmen.
+        \end{itemize}}
+    \entry
+        {Juni 2011 \\ -- Juli 2011}
+		{Administratief medewerker}
+		{Univé Rechtshulp}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Bijbaan van twee maanden waarbij ik juridische dossiers digitaliseerde.
+        \end{itemize}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATES
+%----------------------------------------------------------------------------------------
+\cvsect{Certificaten}
+\begin{entrylist}
+    \entry
+        {Juni 2026}
+        {DevOps Engineer Expert (AZ-400)}
+        {Microsoft}
+        {Ontwerpen en implementeren van DevOps-oplossingen met Azure DevOps, CI/CD-pipelines, infrastructuur als code (IaC), beveiliging en automatisering.
+        }
+    \entry
+        {December 2025}
+        {Azure Developer Associate (AZ-204)}
+        {Microsoft}
+        {Bewezen vaardigheid in het ontwikkelen, implementeren en monitoren van schaalbare Azure-oplossingen.
+        }
+    \entry
+		{November 2024}
+		{Azure Fundamentals (AZ-900)}
+		{Microsoft}
+		{Toont een solide basiskennis van Microsoft Azure.}
+    \entry
+		{November 2024}
+		{Professional Scrum Master (PSM-I)}
+		{Scrum.org}
+		{Bewezen kennis van Scrum-framework, empirisch werken en faciliteren van effectieve, zelforganiserende teams.}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Nevenactiviteiten}
+\begin{entrylist}
+    \entry
+        {Maart 2026 \\ -- Heden}
+        {Plaatsvervangend raadslid}
+        {Gemeente Assen}
+        {Als plaatsvervangend raadslid neem ik deel aan consulterende raadsbijeenkomsten en voorbereidende raadsactiviteiten. Daarnaast bestudeer ik raadsstukken, draag ik bij aan de voorbereiding van de fractie en vertegenwoordig ik de partij bij lokale politieke bijeenkomsten.}
+    \entry
+		{}
+		{Diverse commissies}
+		{Studievereniging Cover}
+		{Introcee: Introkamp georganiseerd voor de eerstejaars. StudCee: Voor een periode van drie jaar tentamen trainingen georganiseerd.}
+    \entry
+		{}
+		{Commissie}
+		{Fysisch-Mathematische Faculteitsvereniging}
+		{Natuurkunde alumni dag georganiseerd}
+\end{entrylist}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Talen}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{Nederlands} --- moedertaal, \textbf{Engels} --- C1, \textbf{Duits} --- B2.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
