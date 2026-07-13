@@ -30,8 +30,9 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload \
+              --auth-mode login \
               --account-name gerritjan \
               --container-name '$web' \
               --name cv-gerritjan-van-der-sloot.pdf \
-              --file resume/resume.pdf \
-              --overwrite true
+              --file src/main.pdf \
+              --overwrite
